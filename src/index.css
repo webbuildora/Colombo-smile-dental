@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: #1A1A2E; background:#fff; }
+h1,h2,h3,h4,h5 { font-family: 'Playfair Display', serif; }
+
+.glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.4); }
+.btn-teal { @apply inline-flex items-center gap-2 bg-teal text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-gold hover:-translate-y-0.5 shadow-soft; }
+.btn-outline { @apply inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-white hover:text-navy; }
+.btn-navy { @apply inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-teal; }
+.section { @apply py-20 md:py-28 px-4; }
+.container-x { @apply max-w-7xl mx-auto; }
+.eyebrow { @apply text-teal uppercase tracking-[0.25em] text-xs font-semibold; }
+.heading { @apply font-display text-4xl md:text-5xl font-bold text-navy leading-tight; }
+.card-hover { @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-soft; }
+
+/* gradient border glow on hover */
+.glow-card { position: relative; }
+.glow-card::before {
+  content: ''; position: absolute; inset: 0; border-radius: 1.25rem; padding: 2px;
+  background: linear-gradient(135deg,#00B4B4,#0A1F44,#C9A84C);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: 0; transition: opacity .4s;
+}
+.glow-card:hover::before { opacity: 1; }
+
+/* before/after slider */
+.ba-wrap { position: relative; overflow: hidden; border-radius: 1.25rem; }
+.ba-after { position: absolute; inset: 0; clip-path: inset(0 0 0 50%); }
+.ba-handle { position: absolute; top:0; bottom:0; left:50%; width:3px; background:#00B4B4; cursor:ew-resize; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background:#00B4B4; border-radius: 4px; }

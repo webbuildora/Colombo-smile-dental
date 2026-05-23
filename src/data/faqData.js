@@ -1,0 +1,30 @@
+export const faqs = {
+  General: [
+    { q:'Where are you located?', a:'No. XX, Galle Road, Colombo 03, Sri Lanka.' },
+    { q:'What are your opening hours?', a:'Mon–Sat 8:00 AM – 7:00 PM, Sun 9:00 AM – 2:00 PM.' },
+    { q:'Do you accept walk-ins?', a:'We strongly recommend booking, but accept walk-ins based on availability.' },
+    { q:'Is parking available?', a:'Yes, complimentary parking is available for all patients.' },
+    { q:'Do you have wheelchair access?', a:'Yes, our clinic is fully accessible.' }
+  ],
+  Treatments: [
+    { q:'What treatments do you offer?', a:'From general check-ups to advanced implants, orthodontics, and facial aesthetics.' },
+    { q:'Are your dentists internationally trained?', a:'Yes, several of our specialists hold international qualifications.' },
+    { q:'Do you offer sedation dentistry?', a:'Yes, conscious sedation is available for nervous patients.' },
+    { q:'How sterile is your clinic?', a:'We follow ISO-certified sterilisation protocols.' },
+    { q:'Can I get a second opinion?', a:'Absolutely — we welcome second-opinion consultations.' }
+  ],
+  Pricing: [
+    { q:'Do you offer payment plans?', a:'Yes, flexible payment plans are available for major treatments.' },
+    { q:'Do you accept insurance?', a:'We accept most major Sri Lankan insurance providers.' },
+    { q:'Is the consultation free?', a:'First consultations are complimentary for cosmetic and implant cases.' },
+    { q:'Are estimates provided upfront?', a:'Yes — full transparency before any treatment begins.' },
+    { q:'Do prices include taxes?', a:'All quoted prices are inclusive of taxes.' }
+  ],
+  Appointments: [
+    { q:'How do I book?', a:'Online via our website, by phone, or via WhatsApp.' },
+    { q:'How quickly can I get an appointment?', a:'Often same-week. Emergency cases are seen the same day.' },
+    { q:'Can I reschedule?', a:'Yes — please notify us at least 24 hours in advance.' },
+    { q:'What should I bring to my first visit?', a:'A valid ID and any past dental records or X-rays if available.' },
+    { q:'Do you send reminders?', a:'Yes — automated SMS and WhatsApp reminders before every appointment.' }
+  ]
+}

@@ -1,0 +1,1 @@
+import{H as o,I as n}from"./index-BmHINDNY.js";function e({children:i,delay:t=0}){return o.jsx(n.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0,amount:.2},transition:{duration:.6,delay:t},children:i})}export{e as R};
